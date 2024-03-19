@@ -11,7 +11,7 @@
 <body>
     <header>
          <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top mb-3">
         <div class="container">
             <a href="#" class="navbar-brand">Kahawa Kete</a>
             <!-- comes after navbar to toggle and add hamburger -->
@@ -19,17 +19,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navmenu">
+            <div class="collapse navbar-collapse " id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#shop" class="nav-link">Shop</a>
+                        <a href="#shop" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact Us</a>
-                    </li>
+                    </li> 
+                 
                     <li class="nav-item">
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -40,7 +41,72 @@
         </div>
     </nav>
     </header>
+    <br>
     <main>
+        <section class="mt-5 text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>Good Coffee will allways find the audience</h1>
+                        <p class="lead my-4">
+                            We provide a variety of unique and best coffees
+                        </p>
+                        <button class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#reserveModal">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal" id="reserveModal" tabindex="-1">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h5 class="modal-title text-light">Make Reservation</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <form id="reserveForm">
+                        <div class="row mb-3">
+                            <label for="name" class="col col-form-label">Name</label>
+                            <div class="col-12 col-sm-6">
+                                <input type="name" class="form-control" id="name" name="name" placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="numberOfpeople" class="col-form-label col">Number of People</label>
+                            <div class="col-12 col-sm-6">
+                                <select name="numberOfpeople" id="numberOfpeople" class="form-select">
+                                    <option value="selected">Select...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>    
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="date" class="col col-form-label">Date</label>
+                            <div class="col-12 col-sm-6">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Select Date">
+                            </div>
+                        </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                    </form>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
        
     </main>
     <footer>
