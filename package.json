@@ -2,12 +2,12 @@
   "name": "coffeeshop",
   "version": "1.0.0",
   "description": " A coffeshop website",
-  "main": "index.js",
+  
   "source": "index.html",
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build"
- },
+  },
   "keywords": [],
   "author": "Sandra",
   "license": "ISC",
@@ -16,5 +16,13 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandra-jk/coffeeshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandra-jk/coffeeshop/issues"
+  },
+  "homepage": "https://github.com/sandra-jk/coffeeshop#readme"
 }
