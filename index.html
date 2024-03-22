@@ -4,55 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="styles.css" rel="stylesheet" >
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>kahawa kete</title>
 </head>
-<body>
-    <header>
-         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top mb-3">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Kahawa Kete</a>
+            <a href="#" class="navbar-brand">Kahawa kete</a>
             <!-- comes after navbar to toggle and add hamburger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse " id="navmenu">
+            <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#shop" class="nav-link">Home</a>
+                        <a href="#shop" class="nav-link">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About Us</a>
+                        <a href="#about" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact Us</a>
-                    </li> 
-                 
-                    <li class="nav-item">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        </form>
+                        <a href="#contact" class="nav-link">Contact us</a>
                     </li>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
                 </ul>
             </div>
         </div>
     </nav>
-    </header>
     <br>
     <main>
         <section class="mt-5 text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
             <div class="container">
-                <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="d-sm-flex align-items-center justify-content-between justify-content-sm-end">
                     <div>
                         <h1>Good Coffee will allways find the audience</h1>
-                        <p class="lead my-4">
+                        <p class="lead my-4" text-align: right>
                             We provide a variety of unique and best coffees
                         </p>
                         <button class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#reserveModal">
-                            Shop Now
+                            Book a table
                         </button>
                     </div>
                 </div>
@@ -109,10 +105,27 @@
           </div>
        
     </main>
-    <footer>
-
+<body>
+    <footer class="container-fluid footer bg-dark mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p>&copy; 2024 Coffe shop</p>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <p class="contact-info">Contact us: 
+                        <a href="tel:+1234567890">+1 (254) 794091462</a> | 
+                        <a href="mailto:Coffe sho01@gmail.com">Coffe sho01@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-    <!-- Bootstrap JavaScript plugins -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   <!-- Bootstrap JavaScript plugins -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
 </body>
 </html>
